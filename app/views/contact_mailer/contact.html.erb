@@ -1,3 +1,10 @@
-<h1>Bonjour</h1>
+<h1>Bonjour <%= @user.name %></h1>
 
 <p>Comment ça va ???</p>
+
+
+<p>
+	
+<%= link_to "voir le site", user_url(@user, host: 'https://www.thehackingproject.org') %>
+
+</p>
