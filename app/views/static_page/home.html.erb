@@ -84,7 +84,8 @@
               <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
             </span>
             <h4 class="service-heading">E-Commerce</h4>
-            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+            <p class="text-muted">Résultat de recherche d'images pour "ecommerce"
+              Il y aurait 182 000 sites ecommerce actifs selon les chiffres de la Fevad. La concurrence est rude, vous n'avez pas le droit à l'erreur, il faut faire les bons choix dès le départ. Plusieurs solutions s'offrent à vous pour développer votre site ecommerce.</p>
           </div>
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
@@ -92,7 +93,7 @@
               <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
             </span>
             <h4 class="service-heading">Responsive Design</h4>
-            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+            <p class="text-muted">Un site web adaptatif (anglais RWD pour responsive web design, conception de sites web adaptatifs selon l'OQLF) est un site web dont la conception vise, grâce à différents principes et techniques, à offrir une consultation confortable même pour des supports différents..</p>
           </div>
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
@@ -100,7 +101,7 @@
               <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
             </span>
             <h4 class="service-heading">Web Security</h4>
-            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+            <p class="text-muted">La sécurité Internet est une branche de la sécurité informatique spécifiquement liés à l'Internet, impliquant souvent la sécurité du navigateur web, mais aussi la sécurité du réseau à un niveau plus général, car il s'applique à d'autres applications et au système d'exploitation dans son ensemble.</p>
           </div>
         </div>
       </div>
@@ -240,7 +241,7 @@
                     <h4 class="subheading">Thp Lille</h4>
                   </div>
                   <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                    <p class="text-muted"> The Hacking Project est une jeune pousse qui souhaite apporter à tous les compétences necessaires pour le monde de demain. Nos formations se déroulent du lundi au vendredi de 9h à 20h pendant 2 mois 1/2. Chez nous, pas de professeurs, pas de locaux.</p>
                   </div>
                 </div>
               </li>
@@ -421,11 +422,11 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">
-                    <input class="form-control" id="name" type="text" placeholder="Entrez votre prénom*" required="required" data-validation-required-message="Entrez votre prénom">
+                    <%= text_field_tag'first_name', nil, placeholder: 'Entrez votre prénom', class: "form-control" %>
                     <p class="help-block text-danger"></p>
                   </div>
                    <div class="form-group">
-                    <input class="form-control" id="name" type="text" placeholder="Entrez votre nom*" required="required" data-validation-required-message="Entrez votre nom">
+                   <%= text_field_tag'last_name', nil, placeholder: 'Nom', class: "form-control" %>
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
@@ -435,7 +436,7 @@
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
-                    <textarea class="form-control" id="message" placeholder="Votre message*" required="required" data-validation-required-message="Please enter a message."></textarea>
+                   <%= text_area_tag 'content',nil, placeholder: 'Votre message*', class: 'form-control' %>
                     <p class="help-block text-danger"></p>
                   </div>
                 </div>

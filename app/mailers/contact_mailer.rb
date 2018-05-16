@@ -1,15 +1,20 @@
 class ContactMailer < ApplicationMailer
 
-	def initialize
+	def initialize(params)
 	@email = params[:email]
 	@name = params[:name]
-	@url  = 'http://example.com/login'
+	@content = params[:content]
+
 	end
 
 	def contact()
-
-	mail(from: "alejo_alvarez67@hotmail.com", to: "@email",
-    subject: "This is a nice welcome <%= @name %>)"
+	#ContactMailer.welcome_email.deliver_now!
+	
    end
 
 end
+
+=begin
+mail(from: "alejo_alvarez67@hotmail.com", to: "@email",
+    subject: "This is a nice welcome" <%= @name %>)
+=end

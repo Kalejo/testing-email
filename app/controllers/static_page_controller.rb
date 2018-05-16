@@ -1,7 +1,15 @@
 class StaticPageController < ApplicationController
+ 
+
+
+
+
   def home
-  	p 'hello'
+
   	p params[:email]
   	@user = params[:mail]
+  	ContactMailer.new(params).contact 
   end
+
+
 end
